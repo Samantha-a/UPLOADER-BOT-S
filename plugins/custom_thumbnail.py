@@ -14,7 +14,6 @@ import os
 from PIL import Image
 import time
 from sample_config import Config
-
     else:
     from config import Config
 # the Strings used for this "thing"
