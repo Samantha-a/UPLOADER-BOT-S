@@ -14,8 +14,7 @@ import os
 from PIL import Image
 import time
 from sample_config import Config   
-    else:
-    from config import Config
+    
 # the Strings used for this "thing"
 from translation import Translation
 from pyrogram import Client as Clinton
@@ -48,7 +47,7 @@ async def viewthumbnail(bot, update):
         chat_id=update.chat.id,
         photo=thumbnail,
         caption=f"Your current saved thumbnail 🦠",
-        reply_to_message_id=update.message_id)
+        reply_to_message_id=update.message_id) 
     else:
         await update.reply_text(text=f"No Thumbnail found 🤒")
 
